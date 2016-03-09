@@ -1,0 +1,14 @@
+#N canvas 405 81 630 464 10;
+#X obj 153 110 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 348 98 netreceive 3001 1;
+#X obj 373 154 print;
+#X msg 162 145 send test;
+#X obj 179 190 netsend 3001 1;
+#X obj 46 17 loadbang;
+#X msg 59 73 connect localhost 3001;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;
