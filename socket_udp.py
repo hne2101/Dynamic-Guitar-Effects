@@ -1,6 +1,6 @@
+# UDP socket communication between pd and python
+
 from socket import *
-import os, sys
-from multiprocessing import Process
 
 s = socket(AF_INET,SOCK_DGRAM)
 s.sendto('test;\n',('localhost',3001))
